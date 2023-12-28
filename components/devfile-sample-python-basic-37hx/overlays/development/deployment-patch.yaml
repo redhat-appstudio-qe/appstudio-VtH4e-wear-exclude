@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-37hx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-zucq-tenant/appstudio/devfile-sample-python-basic-37hx@sha256:0d6dab2eb1533ef13d46e43588949d2604672841dbb7d77850f4a1ff1ba2f9b8
+        name: my-python
+        resources: {}
+status: {}
