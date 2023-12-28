@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-nlpf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-zucq-tenant/appstudio/dc-metro-map-nlpf@sha256:76e9a8791a32581a49cbe5ea2042ffa213d42379ff76144c81d78179367ce695
+        name: my-nodejs
+        resources: {}
+status: {}
